@@ -1,0 +1,41 @@
+{% extends 'trial/base.html' %}
+
+
+{% block breadcrumb %}
+  <li class="breadcrumb-item active">Semester Marks</li>
+{% endblock %}
+
+{% block content %}
+</h1>
+  <table class="table">
+    <thead class="thead-inverse">
+      <tr>
+        <th>Subject Code</th>
+        <th>Subjects</th>
+        <th>Credits</th>
+        <th>Grade</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for marks in sem_marks %}
+      <tr>
+        <td>{{marks.subject.subject_code}}</td>
+        <td>{{marks.subject}}</td>
+        <td>{{marks.subject.subject_credits}}</td>
+        <td>{{marks.marks}}</td>
+          {% if marks.marks == "F(Fail)" %}
+        <td class="p-3 mb-2 bg-danger text-white"> Failed </td>
+          {% else %}
+        <td class="p-3 mb-2 bg-success text-white"> passed </td>
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+
+{% endblock %}
+{% block b %}
+
+  {% endblock %}

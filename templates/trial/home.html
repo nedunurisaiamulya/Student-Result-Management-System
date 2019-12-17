@@ -1,0 +1,100 @@
+{% extends 'trial/base.html' %}
+
+{% block breadcrumb %}
+  <li class="breadcrumb-item active">Semester Makrs</li>
+{% endblock %}
+
+{% block content %}
+<h1>hello <a class="nav-link text-capitalize">{{ request.user.student.student_roll }}</a>
+</h1>
+  <table class="table">
+    <thead class="thead-inverse">
+      <tr>
+        <th>Semesters</th>
+        <th>Supplies</th>
+        <th>Count</th>
+        <th>Total CGPA of Sem</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+            <a href="{% url 'sem' request.user.student.student_roll '1-1' %}"><h4>1-1 </h4></a>
+          </td>
+          <td class="align-middle">0</td>
+          <td class="align-middle">0</td>
+          <td class="align-middle">0</td>
+        </tr>
+    </tbody>
+      <tbody>
+        <tr>
+          <td>
+            <a href="{% url 'sem'  request.user.student.student_roll '1-2' %}"><h4>1-2</h4></a>
+          </td>
+          <td class="align-middle">0</td>
+          <td class="align-middle">0</td>
+          <td class="align-middle">0</td>
+        </tr>
+    </tbody>
+      <tbody>
+        <tr>
+          <td>
+            <a href="{% url 'sem' request.user.student.student_roll '2-1' %}"><h4>2-1</h4></a>
+          </td>
+          <td class="align-middle">0</td>
+          <td class="align-middle">0</td>
+          <td class="align-middle">0</td>
+        </tr>
+    </tbody>
+      <tbody>
+        <tr>
+          <td>
+            <a href="{% url 'sem' request.user.student.student_roll '2-2' %}"><h4>2-2</h4></a>
+          </td>
+          <td class="align-middle">0</td>
+          <td class="align-middle">0</td>
+          <td class="align-middle">0</td>
+        </tr>
+    </tbody>
+      <tbody>
+        <tr>
+          <td>
+            <a href="{% url 'sem' request.user.student.student_roll '3-1' %}"><h4>3-1</h4></a>
+          </td>
+          <td class="align-middle">0</td>
+          <td class="align-middle">0</td>
+          <td class="align-middle">0</td>
+        </tr>
+    </tbody>
+      <tbody>
+        <tr>
+          <td>
+            <a href="{% url 'sem' request.user.student.student_roll  '3-2' %}"><h4>3-2</h4></a>
+          </td>
+          <td class="align-middle">0</td>
+          <td class="align-middle">0</td>
+          <td class="align-middle">0</td>
+        </tr>
+    </tbody>
+      <tbody>
+        <tr>
+          <td>
+            <a href="{% url 'sem' request.user.student.student_roll '4-1' %}"><h4>4-1</h4></a>
+          </td>
+          <td class="align-middle">0</td>
+          <td class="align-middle">0</td>
+          <td class="align-middle">0</td>
+        </tr>
+    </tbody>
+      <tbody>
+        <tr>
+          <td>
+            <a href="{% url 'sem' request.user.student.student_roll '4-2' %}"><h4>4-2</h4></a>
+          </td>
+          <td class="align-middle">0</td>
+          <td class="align-middle">0</td>
+          <td class="align-middle">0</td>
+        </tr>
+    </tbody>
+  </table>
+{% endblock %}

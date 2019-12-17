@@ -1,0 +1,56 @@
+{% extends 'trial/base.html' %}
+
+{% block breadcrumb %}
+  <li class="breadcrumb-item active">Details</li>
+{% endblock %}
+
+{% block content %}
+<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Details</th>
+      <th scope="col">Details</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+      <td>Name</td>
+      <td><a>{{ request.user.student.student_name }}</a></td>
+    </tr>
+    <tr>
+    <tr>
+      <td>HallTicket No</td>
+      <td><a>{{ request.user.student.student_roll }}</a></td>
+    </tr>
+    <tr>
+      <td>Class</td>
+      <td><a>{{ request.user.student.student_class }}</a></td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><a>{{ request.user.student.student_email }}</a></td>
+    </tr>
+  <tr>
+      <td>Gender</td>
+      <td><a>{{ request.user.student.student_gender }}</a></td>
+    </tr>
+    <tr>
+      <td>Student Phone no</td>
+      <td><a>{{ request.user.student.student_phone }}</a></td>
+    </tr>
+  <tr>
+      <td>Student Father</td>
+      <td><a>{{ request.user.student.father_name }}</a></td>
+    </tr>
+  <tr>
+      <td>Student Mother</td>
+      <td><a>{{ request.user.student.mother_name }}</a></td>
+    </tr>
+    <tr><center>
+        <center><td>Parent Phone</td></center>
+        <td><a>{{ request.user.student.parent_phone }}</a></td></center>
+    </tr>
+  </tbody>
+</table>
+</center>
+{% endblock %}
