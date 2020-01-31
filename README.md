@@ -1,0 +1,2 @@
+# Student-Result-Management-System
+The main objective of the project is to provide the exam result to the student in a simple way. This project is useful for students and institutions for getting a results in simple manner. Subject status and grade is an application tool for displaying the results. The system is intended for the student and privileges that are provided to student are to view his /her results and details by providing username and password for secure login and the user has the privilege only to read.
